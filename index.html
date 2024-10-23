@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Investimentos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Investimentos</h1>
+        <div class="input-group">
+            <label for="initial-amount">
+                <i class="icon">&#128176;</i> Valor Inicial (R$)
+            </label>
+            <input type="number" id="initial-amount" placeholder="Ex: 1.500,00">
+        </div>
+        
+        <div class="input-group">
+            <label for="interest-rate">
+                <i class="icon">&#128200;</i> Taxa de Juros Anual (%)
+            </label>
+            <input type="number" id="interest-rate" placeholder="Ex: 5%">
+        </div>
+        
+        <div class="input-group">
+            <label for="years">
+                <i class="icon">&#128337;</i> Número de Anos
+            </label>
+            <input type="number" id="years" placeholder="Ex: 10 Anos">
+        </div>
+        
+        <button onclick="simulateInvestment()">Calcular</button>
+        
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p id="result-text">Insira os valores e clique em "Calcular".</p>
+        </div>
+    </div>
+</body>
+</html>
